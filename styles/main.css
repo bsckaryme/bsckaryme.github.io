@@ -1,0 +1,329 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-top: 0px; /* Ajustar según el tamaño del header */
+}
+
+header {
+  background-color: rgb(105, 18, 129);
+  color: rgb(105, 18, 129);
+  padding: 10px 0px;
+  position: fixed; /* Cambio a fixed */
+  width: 100%;
+  z-index: 999999999;
+  top: 0; /* Anclar en la parte superior */
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 50px; /* Ajusta el tamaño de acuerdo a tu logo */
+}
+
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar-links li {
+  margin-right: 20px;
+}
+
+.navbar-links li:last-child {
+  margin-right: 0;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+.purple-section {
+  background-color:rgb(105, 18, 129);
+  color: white;
+  padding: 100px 0;
+  margin-top: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0px;
+}
+
+.purple-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.text h2 {
+  margin-bottom: 10px;
+  font-size: xxx-large;
+}
+
+.image {
+  flex: 1;
+  position: relative;
+}
+
+.image img {
+  max-width: 100%;
+  border-radius: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.image .overlay {
+  position: absolute;
+  bottom: 0px;
+  top: 130px;
+  left: 200px;
+  width: 60%;
+  z-index: 1;
+}
+
+.image-grid {
+  text-align: center;
+  padding: 10px 0;
+  font-size: x-large;
+}
+
+.image-grid h2 {
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* Tamaño deseado de las imágenes */
+.grid-item {
+  width: 250px; 
+  margin: 10px;
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Ajusta el redondeo de las esquinas */
+}
+
+.grid-item p {
+  margin-top: 10px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section {
+  display: flex;
+  gap: 10px; /* Espacio entre las imágenes */
+}
+
+.image-section img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* Asegura que la imagen mantenga su proporción */
+  border: 1px solid #ccc; /* Opcional: bordes alrededor de las imágenes */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcional: sombra */
+}
+
+footer {
+  margin-top: 50px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  width: 100%;
+  bottom: 0;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 50px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links ul li {
+  margin-bottom: 10px;
+}
+
+.social-media a {
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.alphabet-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.alphabet-table th, .alphabet-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.alphabet-table th {
+  background-color: purple;
+  color: white;
+}
+
+.alphabet-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.alphabet-table tr:hover {
+  background-color: #ddd;
+}
+
+.alphabet-table img {
+  width: 50px;  /* Ajusta el tamaño de las imágenes según sea necesario */
+  height: auto;
+}
+
+
+.contact-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.contact-section h2 {
+  text-align: center;
+  color: black;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.contact-form button {
+  padding: 10px;
+  border: none;
+  background-color: purple;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: purple;
+}
+
+.cards-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 200px;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #395da1;
+}
+
+.card p {
+  color: #333;
+}
+.footer-section img {
+width: 40px;
+height: 25px;
+}
+
+.image-book {
+  display: flex;
+  gap: 10px; /* Espacio entre las imágenes */
+}
+
+.image-book img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* Asegura que la imagen mantenga su proporción */
+  border: 1px solid #ccc; /* Opcional: bordes alrededor de las imágenes */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcional: sombra */
+}

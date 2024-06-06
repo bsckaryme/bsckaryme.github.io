@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- telefono compatible -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- titulo de arriba -->
+    <title>LOS NIÑOS</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <img src="/img/logo.svg" alt="Logo" class="original-logo" />
+        </div>
+        <!-- links de las otras paginas -->
+        <ul class="navbar-links">
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="/abecedarios.html">Abecedarios</a></li>
+          <li><a href="/artesanias.html">Conocenos</a></li>
+          <li><a href="/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- el para llenar datos y poder comunicarse  -->
+    <section class="contact-section" style="margin-top: 100px !important;">
+        <h2>Contacto</h2>
+        <form action="#" method="post" class="contact-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Asunto:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <!-- pie de pagina -->
+    <footer>
+      <div class="footer-container">
+          <div class="footer-section contact-info">
+            <!-- info general -->
+              <h4>Contacto</h4>
+              <p>Dirección: Av.Chichén Itzá Reg.98 Mz.56 lote 1-01 </p>
+              <p>Teléfono: +52 9981055734</p>
+              <p>Email: losniños@gmail.com</p>
+          </div>
+          <div class="footer-section quick-links">
+            <!-- enlaces rapidos -->
+              <h4>Enlaces Rápidos</h4>
+              <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Abecedario</a></li>
+                <li><a href="#">Conocenos</a></li>
+                <li><a href="#">Contacto</a></li>
+              </ul>
+          </div>
+          <div class="footer-section social-media">
+            <!-- redes sociales -->
+              <h4>Síguenos</h4>
+              <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+              <p>Los Niños</p>
+              <a href="#"><img src="img/tiktok.png" alt="Tiktok"></a>
+              <p>Los_Niños</p>
+              <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+              <p>Los_Niños</p>
+          </div>
+      </div>
+      <div class="footer-bottom">
+        <!-- de que es mio -->
+          <p>&copy; 2024 Los Niños. Todos los derechos reservados.</p>
+      </div>
+  </footer>
+  </body>
+</html>
